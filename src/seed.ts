@@ -200,7 +200,7 @@ const projects = projectRepository.create([
       priority: 3,
       dueDate: new Date("2026-08-22"),
       project: projects[2],
-      assignee: users[4],
+      assignee: null,
       tags: [tags[1], tags[2]],
     },
     {
@@ -213,6 +213,16 @@ const projects = projectRepository.create([
       assignee: users[3],
       tags: [tags[5], tags[1]],
     },
+    {
+  title: "Deploy API",
+  description: "Deploy the backend API to the server",
+  status: TaskStatus.TODO,
+  priority: 3,
+  dueDate: new Date("2026-08-30"),
+  project: projects[2],
+  assignee: null,
+  tags: [tags[1], tags[5]],
+},
   ]);
 
 
